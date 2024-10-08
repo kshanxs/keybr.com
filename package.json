@@ -27,6 +27,7 @@
     "build": "cross-env NODE_ENV=production webpack",
     "build-dev": "cross-env NODE_ENV=development webpack",
     "watch": "cross-env NODE_ENV=development webpack --watch",
+    "db-test": "cross-env DATABASE_CLIENT=sqlite npm test",
     "start": "cross-env NODE_ENV=development node --enable-source-maps ./root/index.js"
   },
   "dependencies": {
