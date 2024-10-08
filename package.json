@@ -24,10 +24,10 @@
     "stylelint": "stylelint '{**/*,*}.{less,css}'",
     "stylelint-fix": "stylelint '{**/*,*}.{less,css}' --fix",
     "format": "prettier '{**/*,*}.{js,jsx,ts,tsx,less,css}' --write",
-    "build": "env NODE_ENV=production webpack",
-    "build-dev": "env NODE_ENV=development webpack",
-    "watch": "env NODE_ENV=development webpack --watch",
-    "start": "env NODE_ENV=development node --enable-source-maps ./root/index.js"
+    "build": "cross-env NODE_ENV=production webpack",
+    "build-dev": "cross-env NODE_ENV=development webpack",
+    "watch": "cross-env NODE_ENV=development webpack --watch",
+    "start": "cross-env NODE_ENV=development node --enable-source-maps ./root/index.js"
   },
   "dependencies": {
     "@fastr/client": "^0.0.20",
@@ -81,6 +81,7 @@
     "ava": "^5.3.1",
     "cheerio": "^1.0.0",
     "confusing-browser-globals": "^1.0.11",
+    "cross-env": "^7.0.3",
     "typescript": "^5.6.2"
   }
 }

@@ -27,7 +27,7 @@ Run basic sanity checks, compile, bundle and test the application:
 ```shell
 npm run compile
 npm run build-dev
-env DATABASE_CLIENT=sqlite npm test
+cross-env DATABASE_CLIENT=sqlite npm test
 ```
 
 When running the application for the first time, make sure that database tables are created and example users exist:
