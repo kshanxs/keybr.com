@@ -13,6 +13,11 @@
 @import "open-sans-700.css";
 @import "open-sans-700italic.css";
 
+@import "roboto-400.css";
+@import "roboto-400italic.css";
+@import "roboto-700.css";
+@import "roboto-700italic.css";
+
 @import "roboto-mono-400.css";
 @import "roboto-mono-400italic.css";
 @import "roboto-mono-700.css";
@@ -22,6 +27,11 @@
 @import "spectral-400italic.css";
 @import "spectral-700.css";
 @import "spectral-700italic.css";
+
+@import "ubuntu-400.css";
+@import "ubuntu-400italic.css";
+@import "ubuntu-700.css";
+@import "ubuntu-700italic.css";
 
 @import "ubuntu-mono-400.css";
 @import "ubuntu-mono-400italic.css";
@@ -35,14 +45,32 @@
   --monospace-font-family: "Ubuntu Mono", monospace;
 }
 
+html[data-font="nunito"] {
+  --default-font-family: "Nunito", sans-serif;
+  --header-font-family: "Nunito", sans-serif;
+  --value-font-family: "Nunito", sans-serif;
+}
+
 html[data-font="opensans"] {
   --default-font-family: "Open Sans", sans-serif;
   --header-font-family: "Open Sans", sans-serif;
   --value-font-family: "Ubuntu Mono", monospace;
 }
 
+html[data-font="roboto"] {
+  --default-font-family: "Roboto", serif;
+  --header-font-family: "Roboto", serif;
+  --value-font-family: "Roboto", serif;
+}
+
 html[data-font="spectral"] {
   --default-font-family: "Spectral", serif;
   --header-font-family: "Spectral", serif;
   --value-font-family: "Spectral", serif;
+}
+
+html[data-font="ubuntu"] {
+  --default-font-family: "Ubuntu", serif;
+  --header-font-family: "Ubuntu", serif;
+  --value-font-family: "Ubuntu Mono", serif;
 }

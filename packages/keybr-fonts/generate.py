@@ -13,7 +13,7 @@ unicode_ranges = [
     ("hebrew", "U+0590-05FF"),
     ("latin", "U+0000-00FF, U+2000-206F, U+2200-22FF, U+E000-E003"),
     ("latin-ext", "U+0100-017F, U+0180-024F, U+0300-036F, U+20A0-20CF"),
-    ("thai", "U+0E01-U+0E5B"),
+    ("thai", "U+0E01-0E5B"),
 ]
 
 
@@ -195,6 +195,26 @@ def main():
         merge_file="Whitespace-em2048.ttf",
     )
     generate(
+        "fonts/Roboto/Roboto-Regular.ttf",
+        "roboto",
+        merge_file="Whitespace-em2048.ttf",
+    )
+    generate(
+        "fonts/Roboto/Roboto-Italic.ttf",
+        "roboto",
+        merge_file="Whitespace-em2048.ttf",
+    )
+    generate(
+        "fonts/Roboto/Roboto-Bold.ttf",
+        "roboto",
+        merge_file="Whitespace-em2048.ttf",
+    )
+    generate(
+        "fonts/Roboto/Roboto-BoldItalic.ttf",
+        "roboto",
+        merge_file="Whitespace-em2048.ttf",
+    )
+    generate(
         "fonts/RobotoMono/static/RobotoMono-Regular.ttf",
         "roboto-mono",
         merge_file="Whitespace-em2048.ttf",
@@ -232,6 +252,26 @@ def main():
     generate(
         "fonts/Spectral/Spectral-BoldItalic.ttf",
         "spectral",
+        merge_file="Whitespace-em1000.ttf",
+    )
+    generate(
+        "fonts/Ubuntu/Ubuntu-R.ttf",
+        "ubuntu",
+        merge_file="Whitespace-em1000.ttf",
+    )
+    generate(
+        "fonts/Ubuntu/Ubuntu-RI.ttf",
+        "ubuntu",
+        merge_file="Whitespace-em1000.ttf",
+    )
+    generate(
+        "fonts/Ubuntu/Ubuntu-B.ttf",
+        "ubuntu",
+        merge_file="Whitespace-em1000.ttf",
+    )
+    generate(
+        "fonts/Ubuntu/Ubuntu-BI.ttf",
+        "ubuntu",
         merge_file="Whitespace-em1000.ttf",
     )
     generate(
